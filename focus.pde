@@ -15,7 +15,7 @@ void draw() {
   if (pmin!=minute()) { //sets pmin to minute when minute value changes
     pmin=minute();
   }
-  focus=(minute()<50)? true : false;
+  focus=(minute()<25)? true : false;
   textSize(68); 
   if (focus) {
     fill(0, 0, 0, 20);          //these two lines code for
