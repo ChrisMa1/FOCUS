@@ -9,13 +9,14 @@ void setup() {
   }
 
 void draw() {
-  if (pmin==49 && minute()==50) { // senses when minute changes
+  int change=50;
+  if (pmin==change-1 && minute()==change) { // senses when minute changes
     background(0); // try running without this, text can be seen behind red break bg
   }
   if (pmin!=minute()) { //sets pmin to minute when minute value changes
     pmin=minute();
   }
-  focus=(minute()<25)? true : false;
+  focus=(minute()<change)? true : false;
   textSize(68); 
   if (focus) {
     fill(0, 0, 0, 20);          //these two lines code for
